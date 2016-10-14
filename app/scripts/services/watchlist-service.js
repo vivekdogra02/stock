@@ -23,8 +23,8 @@ angular.module('stockApp')
 
     // [2] : Save watchlists to localStorage
     var saveModel = function(){
-     	localstorage['Stock.watchlists'] = JSON.stringify(Model.watchlists);
-     	localstorage['Stock.nextId'] = Model.nextId;
+     	localStorage['Stock.watchlists'] = JSON.stringify(Model.watchlists);
+     	localStorage['Stock.nextId'] = Model.nextId;
     };
 
     // [3] : Use Lodash to find a watchlist with a given ID
